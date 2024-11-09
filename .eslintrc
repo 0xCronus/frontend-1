@@ -1,8 +1,18 @@
 {
-  "extends": ["react-app", "react-app/jest"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
     "no-extra-semi": "warn",
-    "quotes": ["warn", "single"],
-    "quote-props": ["warn", "as-needed"]
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "quote-props": [
+      "warn",
+      "as-needed"
+    ]
   }
 }
