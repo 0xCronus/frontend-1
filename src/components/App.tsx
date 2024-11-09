@@ -18,9 +18,9 @@ export default function App() {
     <MetaMaskProvider>
       <ToastContainer position="bottom-right" />
       <Router>
-        <div tw="w-screen min-h-screen overflow-x-hidden">
+        <div tw=" w-full min-h-screen overflow-x-hidden">
           <Navbar />
-          <div tw="max-w-[800px] h-full mx-auto p-2 sm:p-4 mt-1">
+          <div tw="h-full mx-auto p-2 sm:p-4">
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/vaults" element={<VaultsGrid />} />

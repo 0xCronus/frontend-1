@@ -57,7 +57,7 @@ const LandingPage = () => {
       </nav> */}
 
       {/* Hero Section */}
-      <div className="relative max-w-6xl mx-auto mt-8 md:mt-12 px-4">
+      <div className="relative max-w-6xl mx-auto pt-8 md:pt-12 px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

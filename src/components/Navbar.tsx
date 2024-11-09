@@ -55,14 +55,22 @@ export default function Navbar() {
                 rel="noreferrer"
               >
                 <img src={icpLogo} alt="Internet Computer" tw="h-[24px]" />
+                <div className="px-2 font-serif font-bold text-2xl">
+                  VAULTed
+                </div>
               </a>
             </Tooltip>
           )}
           <div tw="flex-1 flex items-center">
             <NavItem to="/">Home</NavItem>
-            {!!user && <NavItem to="/verify">Verify</NavItem>}
+            <NavItem to="/vaults">Vaults</NavItem>
+            {/* {!!user && <NavItem to="/verify">Verify</NavItem>} */}
           </div>
-          {!user && <LoginArea />}
+          {!user ? (
+            <LoginArea />
+          ) : (
+            <NavItem to="/verify">🔐 User Account</NavItem>
+          )}
         </div>
       </div>
     </>
