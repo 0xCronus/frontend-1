@@ -192,7 +192,7 @@ const VaultsGrid = () => {
                       className="w-full px-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
                     />
                     <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-                      USD
+                      ETH
                     </span>
                   </div>
                 </div>
