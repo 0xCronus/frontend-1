@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, TrendingUp, ArrowRight, Coins } from 'lucide-react';
 import {
@@ -10,6 +10,10 @@ import {
 } from '../ui/card';
 
 const VaultsGrid = () => {
+  const [investmentAmounts, setInvestmentAmounts] = useState<InvestmentAmounts>(
+    {},
+  );
+
   const vaults = [
     {
       id: 1,
@@ -48,6 +52,17 @@ const VaultsGrid = () => {
       totalValueLocked: '$1.8M',
     },
   ];
+
+  interface InvestmentAmounts {
+    [key: number]: string;
+  }
+
+  const handleInputChange = (vaultId: number, value: string) => {
+    setInvestmentAmounts((prev: InvestmentAmounts) => ({
+      ...prev,
+      [vaultId]: value,
+    }));
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -164,7 +179,23 @@ const VaultsGrid = () => {
                 </div>
               </CardContent>
 
-              <CardFooter>
+              <CardFooter className="flex flex-col space-y-4">
+                <div className="w-full">
+                  <div className="relative">
+                    <input
+                      type="number"
+                      placeholder="Enter amount"
+                      value={investmentAmounts[vault.id] || ''}
+                      onChange={(e) =>
+                        handleInputChange(vault.id, e.target.value)
+                      }
+                      className="w-full px-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
+                    />
+                    <span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+                      USD
+                    </span>
+                  </div>
+                </div>
                 <button className="w-full px-6 py-3 bg-yellow-400 hover:bg-yellow-300 rounded-full text-black font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
                   <span>Invest Now</span>
                   <ArrowRight className="w-4 h-4" />

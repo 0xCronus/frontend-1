@@ -4,6 +4,7 @@ import nfidLogo from '../assets/nfid.svg';
 import { loginInternetIdentity, loginNFID } from '../services/userService';
 import { handlePromise } from '../utils/handlers';
 import Tooltip from './utils/Tooltip';
+import LoginAreaWithMetaMask from './LoginWithMetamask';
 
 export const LoginAreaButton = tw.div`p-3 border-2 text-xl rounded-full cursor-pointer bg-[#fff8] hover:bg-gray-100`;
 
@@ -37,6 +38,7 @@ export default function LoginArea({ label }: LoginAreaProps) {
           <img src={nfidLogo} alt="NFID" />
         </LoginAreaButton>
       </Tooltip>
+      <LoginAreaWithMetaMask />
     </div>
   );
 }

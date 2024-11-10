@@ -13,7 +13,7 @@ const LandingPage = () => {
       {/* <nav className="px-4 py-4 max-w-6xl mx-auto flex items-center justify-between relative">
         <div className="flex items-center space-x-2">
           <Zap className="w-6 h-6 text-white" />
-          <span className="text-black font-bold text-xl">VAULTed</span>
+          <span className="text-black font-bold text-xl">xChainCrate</span>
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
@@ -153,7 +153,7 @@ const LandingPage = () => {
             className="relative z-10"
           >
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-black mb-2 md:mb-4">
-              VAULTed
+              xChainCrate
             </h1>
             <h2 className="text-2xl sm:text-3xl md:text-4xl text-black/80 font-light">
               DeFi yields, designed
@@ -218,8 +218,8 @@ const LandingPage = () => {
         </h2>
         <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto">
           DeFi offers some of the best yields available on the planet, but
-          they're often hidden behind complex UIs designed for whales. VAULTed
-          is here to fix that.
+          they're often hidden behind complex UIs designed for whales.
+          xChainCrate is here to fix that.
         </p>
         <div className="flex justify-center">
           <a
@@ -239,10 +239,10 @@ const LandingPage = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2">
               <Zap className="w-4 h-4 text-white" />
-              <span className="text-white text-sm">VAULTed</span>
+              <span className="text-white text-sm">xChainCrate</span>
             </div>
             <div className="text-white/70 text-sm">
-              © {currentYear} VAULTed. All rights reserved.
+              © {currentYear} xChainCrate. All rights reserved.
             </div>
             <div className="flex space-x-6">
               <button className="text-white/70 hover:text-white text-sm transition-colors">

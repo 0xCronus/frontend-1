@@ -56,7 +56,7 @@ export default function Navbar() {
               >
                 <img src={icpLogo} alt="Internet Computer" tw="h-[24px]" />
                 <div className="px-2 font-serif font-bold text-2xl">
-                  VAULTed
+                  xChainCrate
                 </div>
               </a>
             </Tooltip>
